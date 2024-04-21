@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link href="style.css" rel="stylesheet" />
+        <script src="./js.js" defer></script>
+        <!-- <style>
+            /* Сховати модальне вікно за замовчуванням */
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+
+            /* Вікно модального вікна */
+            .modal-content {
+                background-color: #fefefe;
+                margin: 15% auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 80%;
+            }
+        </style> -->
+    </head>
+    <body>
+        <h2>Користувачі</h2>
+        <ul id="userList">
+            <!-- Тут буде список користувачів -->
+        </ul>
+
+        <!-- Кнопка для відкриття модального вікна вводу -->
+        <button onclick="openModal()">Додати користувача</button>
+
+        <!-- Модальне вікно вводу -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span onclick="closeModal()" class="close">&times;</span>
+                <p>Введіть ім'я нового користувача:</p>
+                <input type="text" id="userNameInput" />
+                <button onclick="addUserFromModal()">Додати</button>
+            </div>
+        </div>
+
+        <!-- Шапка вашого проекту -->
+        <header>
+            <h1>Розваги</h1>
+            <!-- Навігаційне меню -->
+            <nav>
+                <ul>
+                    <li><a href="#section1">Розділ 1</a></li>
+                    <li><a href="#section2">Розділ 2</a></li>
+                    <!-- Додайте інші пункти меню за необхідності -->
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Основний вміст мого проекту -->
+        <main>
+            <!-- Секція 1 -->
+            <section id="forClock">
+                <div class="clock"></div>
+                <h2>Секція 1</h2>
+                <p>Тут ви можете додати текст, зображення, відео та інше.</p>
+            </section>
+
+            <!-- Секція 2 -->
+            <section id="section2">
+                <h2>Секція 2</h2>
+                <p>Ще одна секція вашого проекту.</p>
+            </section>
+            <!-- Додайте інші секції за необхідності -->
+        </main>
+
+        <!-- Підвал мого проекту -->
+        <footer>
+            <p>&copy; 2024 Автор/Правовласник - Кирилюк Сергій Васильович.</p>
+        </footer>
+    </body>
+</html>
